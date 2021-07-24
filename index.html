@@ -9,6 +9,7 @@
             body{
                 font-family: sans-serif;
                 font-size: 0.8em;
+                height: 100%;
             }
             #top-header{
                 width: 100%;
@@ -42,15 +43,15 @@
             }
             .search-bar-container{
                 width: 100%;
-                height: 30%;
-                margin-top: 2%;
+                height: 10%;
+                margin-top: 2em;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
             .search-box{
                 width: 30%;
-                height: 200%;
+                height: 50%;
                 display: flex;
                 justify-content: center;
                 border: 0.1em solid rgb(196, 196, 196);
@@ -82,7 +83,7 @@
                 margin-right: 0.05em;
             }
             .search-button-container{
-                margin-top: 1.5em;
+                margin-top: 1em;
             }
             .search-button{
                 font-size: 1em;
@@ -91,6 +92,42 @@
                 border-radius: 0.2em;
                 background-color: rgb(224, 224, 224);
                 margin: 0.2em;
+            }
+            a{
+                text-decoration: none;
+            }
+            .language-link{
+                width: 100%;
+                text-align: center;
+                margin-top: 2em;
+            }
+            .footer-style{
+                position: fixed;
+                width: 100%;
+                bottom: 0px;
+                background-color:rgb(223, 223, 223);
+                display: flex;
+                justify-content: flex-start;
+            }
+            #top-footer{
+                bottom: 3em;
+                border-bottom: 0.1em solid rgb(173, 173, 173);
+            }
+            .footer-text{
+                padding: 1em;
+                color: black;
+            }
+            .footer-text:hover{
+                text-decoration: underline;
+            }
+            #bottom-footer{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .footer-links{
+                display: flex;
+                flex-direction: row;
             }
             </style>
     </head>
@@ -115,6 +152,21 @@
                 <button class="search-button">I'm Feeling Lucky</button>
             </div>
         </form>
+        <p class="language-link">Google offered in: <a href="#">lietuvių</a></p>
+        <footer class="footer-style" id="top-footer"><p class="footer-text">Lithuania</p></footer>
+        <footer class="footer-style" id="bottom-footer">
+            <div class="footer-links">
+                <a href="#" class="footer-text">About</a>
+                <a href="#" class="footer-text">Advertising</a>
+                <a href="#" class="footer-text">Business</a>
+                <a href="#" class="footer-text">How Search works</a>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-text">Privacy</a>
+                <a href="#" class="footer-text">Terms</a>
+                <a href="#" class="footer-text">Settings</a>
+            </div>
+        </footer>
 
         </body>
     </html>
