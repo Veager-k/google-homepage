@@ -3,13 +3,50 @@
     <head>
         <link rel="stylesheet" href="css-reset.css">
         <style>
-            h1{
-                font-size: 2em;
+            body{
+                font-family: sans-serif;
+            }
+            #top-header{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            .header-links{
+                margin: 1em 0.5em;
+            }
+            .header-links:hover{
+                text-decoration: underline;
+            }
+            .header-buttons{
+                color: white;
+                background-color: white;
+                padding: 0px 0.5em;
+                border: 0px solid white;
+                margin: 0.45em 0.2em;
+            }
+            .header-buttons:hover{
+                background-color: rgb(189, 189, 189);
+                border-radius: 100%;
+            }
+            .logo{
+                width: 100%;
+                margin-top: 15%;
+                display: flex;
+                justify-content: center;
+                align-content: flex-end;
             }
             </style>
     </head>
     <body>
-        <h1>Google</h1>
-        <h2>Google</h2>
+        <header id="top-header">
+            <a class="header-links">Gmail</a>
+            <a class="header-links">Images</a>
+            <button class="header-buttons"><img src="images/outline_drag_indicator_black_24dp.png"></button>
+            <button class="header-buttons"><img src="images/outline_account_circle_black_24dp.png"></button>
+        </header>
+        <section class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </section>
         </body>
     </html>
